@@ -1,0 +1,194 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Peter}
+\familyname{Penzin}
+\title{Software Engineer}               % optional, remove the line if not wanted
+%\address{Some street}{Some city, state, zip}    % optional, remove the line if not wanted
+%\mobile{+1~(234)~567~890}                     % optional, remove the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+%\email{john@johndoe.com}                          % optional, remove the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with multiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Intel Corporation\\123 somestreet\\some city}
+\recipient{~}{~\\~\\~}
+\date{\today}
+
+%% Uncomment the lines below to add a cover letter %%
+
+%\opening{Hello,}
+%\closing{Best regards,}
+%\enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%I am interested in the Software Engineer --- 123456 position that I found on
+%FooBar's website. I believe I have the skills, knowledge and working experience
+%required for this position. I would appreciate
+%your consideration for this position.
+
+%Carry on with the cover letter...
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+%\clearpage
+
+%% End cover letter, resume below %%
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Objective}
+
+\cvitem{~}{Software engineer, where my knowledge of various programming languages, several Computer Architectures and platforms is valued.}
+
+\section{Technical expertise}
+\cvitem{Languages}{Java, C, R, Ruby, C++, Haskell, Pascal}
+\cvitem{Scripting}{Python, Perl, PHP, Bash, CShell, Windows Shell}
+\cvitem{OS}{Linux, Windows, Windows Server, Mac OS X, FreeBSD}
+\cvitem{Architectures}{IA-32, Intel 64, IA-64, ARM, SPARC}
+\cvitem{Profilers}{PGProf, Oprofile, Java VisualVM, JRockit}
+\cvitem{Debuggers}{JDB, WinDBG, GDB, PGDBG, Various IDE built-in debuggers}
+\cvitem{Configuration}{Puppet, Vagrant}
+\cvitem{Verification}{Jenkins, Valgrind}
+\cvitem{Frameworks}{Hibernate, JMX, Apache Camel, TIBCO, DCOM, Delphi, MPI, OpenMP, Pthreads, .NET}
+\cvitem{Development}{OOP, UML, Agile Development}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Professional Experience}
+%\subsection{Vocational}
+\cventry{Apr~2013--Current}{SW Engineer / Tech Lead}{UTi Worldwide}{Portland, OR}{}{Software developer in the Platform team. Worked on performance analysis and system tools, provided recommendations to other teams.\newline{}%
+Detailed achievements:
+\begin{itemize}
+\item Deployment request tool (in progress)
+  \begin{itemize}
+  \item Lead a cross-team effort to develop a centralized system for deployment management
+  \item Implemented SCM integration using client API
+  \item Gathered requirements and supported change management
+  \end{itemize}
+\item Developed monitoring tools for TIBCO software
+  \begin{itemize}
+  \item Implemented collection of information from Active Matrix enterprise bus and Business Works XSLT engine
+  \item Used Java Management Extensions to publish the results
+  \item Implemented statistics collection using R
+  \end{itemize}
+\item Guided adaptation of Apache Camel as Enterprise Integration framework
+\end{itemize}}
+\cventry{Oct~2011--Mar~2013}{JR SW Engineer}{The Portland Group, Inc (STMicroelectronics)}{Lake Oswego, OR}{}{Intern in the Tools group. Worked on debugger and disassembler\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Optimized Multi-Process Debugging Support
+  \begin{itemize}%
+  \item Code that worked with all supported platforms.
+  \item Improved debugger's scalability by changing the internal symbol representation, which provided better support for 
+        large scale cluster applications.
+  \item The change also improved debugger's ASLR support.
+  \end{itemize}
+\item Developed ARM Disassembler
+  \begin{itemize}
+    \item Implemented support for ARM, Neon (aka Advanced SIMD) and VFP Instruction Sets.
+    \item Communicated efficiently within a team of four people regrading design and output issues.
+  \end{itemize}
+\end{itemize}}
+\cventry{Oct~2008--Dec~2009}{Software Engineer}{Industrial Energy Bank}{Vologda, Russia}{}{Developed software front-end for international money transfers and Net Worth Monitoring system.\newline{}Some achievements:
+\begin{itemize}
+  \item Implemented support for fractional part conversion for foreign exchange transfers.
+  \item Created a system to monitor interest rates of bank's incoming and outgoing liabilities.
+\end{itemize}}
+%\subsection{Miscellaneous}
+
+\section{Education}
+% arguments 3 to 6 can be left empty, got rid of the grades (the one right before description) for now
+% Do we actually need to include a GPA in a resume?
+\cventry{2010--2013}{MS in Computer Science}{Portland State University}{Portland, Oregon}{}{Some of the courses taken: Compiler Design, Computer Architecture, Modern Language Processors, Theory Of Computation, Advanced Computer Architecture I and II, Programming Languages\newline{}Select projects: Lightweight Just-in-time compiler for Java byte code, Survey of parallel sorting algorithms.}  
+\cventry{2003--2008}{BS in Physics and Computer Science}{Vologda State Pedagogical University}{Vologda, Russia}{}{Thesis topic: Numeric Simulation of Hydro-Acoustic Luminescence.
+\newline{}The thesis focused on finding numerical solutions for ordinary differential equation for different acoustic frequencies and different media properties.}
+
+\section{Languages}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{Russian}{Native}{}
+\cvitemwithcomment{German}{Basic}{}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3}
+
+%\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
