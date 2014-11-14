@@ -15,10 +15,8 @@ else
 endif
 endif
 
-TEXLIVE_HOME=/usr/local/texlive/2013/bin/$(ARCH)-$(OS)
-
 # Compile and preveiw settings
-LATEXC=$(TEXLIVE_HOME)/pdflatex
+LATEXC=pdflatex
 FILE=Penzin.pdf
 
 default: $(FILE)
