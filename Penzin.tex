@@ -28,10 +28,10 @@
 \familyname{Penzin}
 \title{Software Engineer}               % optional, remove the line if not wanted
 %\address{Some street}{Some city, state, zip}    % optional, remove the line if not wanted
-%\mobile{+1~(234)~567~890}                     % optional, remove the line if not wanted
+%\mobile{+1~(234)~567~8901}                     % optional, remove the line if not wanted
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
-%\email{john@johndoe.com}                          % optional, remove the line if not wanted
+%\email{john.doe@example.com}                          % optional, remove the line if not wanted
 %\homepage{www.johndoe.com}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
@@ -81,13 +81,13 @@
 
 \section{Objective}
 
-\cvitem{~}{Compiler engineer, where my knowledge of compiler development, several Computer Architectures and platforms is valued.}
+\cvitem{~}{Compiler engineer, where my experience working on various compiler products on multiple platforms is valued.}
 
 \section{Technical expertise}
 \cvitem{Languages}{Java, C, R, Ruby, C++, Haskell, Pascal, Fortran}
-\cvitem{Scripting}{Python, Perl, PHP, Bash, CShell, Windows Shell}
+\cvitem{Scripting}{Python, Perl, Tcl, PHP, Bash, CShell, Windows Shell}
 \cvitem{OS}{Linux, Windows, Windows Server, Mac OS X, FreeBSD}
-\cvitem{Architectures}{IA-32, Intel 64, IA-64, ARM, SPARC}
+\cvitem{Architectures}{IA-32, Intel 64, IA-64, ARM, OpenPower}
 \cvitem{Profilers}{PGProf, Oprofile, Java VisualVM, JRockit}
 \cvitem{Debuggers}{GDB, PGDBG, JDB, WinDBG}
 \cvitem{Configuration}{Puppet, Vagrant}
@@ -103,16 +103,18 @@
 \section{Professional Experience}
 %\subsection{Vocational}
 \cventry{July~2014--Current}{Compiler Engineer}{The Portland Group, Inc (NVIDIA)}{Beaverton, Oregon}{}{
+Worked on perfomance analysis, backend and front-end development, optimizations. \newline{}Some projects:
 \begin{itemize}
   \item Future open source Fortran compiler based on Clang/LLVM (ongoing) \newline{}Select highlights:
   \begin{itemize}
     \item Integrated PGI Fortran compiler into Clang
+    \item Worked on refactoring legacy compiler code
     \item Modified Clang to accept Fortran source files and Fortran-specific command line options
   \end{itemize}
-  \item CORAL project: porting PGI compilers on OpenPower\newline{}Select highlights:
+  \item Participated in poriting PGI C, C++, and Fortran compilers to OpenPower\newline{}Select highlights:
   \begin{itemize}
-    \item LLVM backend maintenance
-    \item OpenMP runtime maintenance
+    \item Analysed benchmark results, investigated and fixed correctness errors
+    \item Maintained compiler's LLVM backend: integrated new versions, provided debugging information support, etc
   \end{itemize}
 \end{itemize}}
 \cventry{Apr~2013--July~2014}{SW Engineer / Tech Lead}{UTi Worldwide}{Portland, OR}{}{Software developer in the Platform team. Worked on performance analysis and system tools, provided recommendations to other teams.\newline{}%
