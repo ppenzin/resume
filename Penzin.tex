@@ -29,10 +29,10 @@
 \familyname{Penzin}
 \title{Software Engineer}               % optional, remove the line if not wanted
 %\address{Some street}{Some city, state, zip}    % optional, remove the line if not wanted
-%\mobile{+1~(234)~567~8901}                     % optional, remove the line if not wanted
+%\mobile{+1~(234)~567~8888}                     % optional, remove the line if not wanted
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
-%\email{john.doe@example.com}                          % optional, remove the line if not wanted
+%\email{john@johndoe.com}                   % optional, remove the line if not wanted
 %\homepage{www.johndoe.com}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
@@ -82,19 +82,7 @@
 
 \section{Objective}
 
-\cvitem{~}{Compiler engineer, where my experience working on various compiler products on multiple platforms is valued.}
-
-\section{Technical expertise}
-\cvitem{Languages}{Java, C, R, Ruby, C++, Haskell, Pascal, Fortran}
-\cvitem{Scripting}{Python, Perl, Tcl, PHP, Bash, CShell, Windows Shell}
-\cvitem{OS}{Linux, Windows, Windows Server, Mac OS X, FreeBSD}
-\cvitem{Architectures}{IA-32, Intel 64, IA-64, ARM, OpenPower}
-\cvitem{Profilers}{PGProf, Oprofile, Java VisualVM, JRockit}
-\cvitem{Debuggers}{GDB, PGDBG, JDB, WinDBG}
-\cvitem{Configuration}{Puppet, Vagrant}
-\cvitem{Verification}{Jenkins, Valgrind, Cmockery}
-\cvitem{Frameworks}{LLVM, Hibernate, JMX, Apache Camel, TIBCO, DCOM, Delphi, MPI, OpenMP, Pthreads, .NET}
-\cvitem{Development}{OOP, UML, Agile Development}
+\cvitem{~}{Grow professionally as a compiler engineer by working on challenging real world problems.}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
@@ -103,67 +91,72 @@
 
 \section{Professional Experience}
 %\subsection{Vocational}
-\cventry{July~2014--Current}{Compiler Engineer}{The Portland Group, Inc (NVIDIA)}{Beaverton, Oregon}{}{
-Worked on performance analysis, backend and front-end development, optimizations. \newline{}Some projects:
+\cventry{July~2014--Current}{Compiler Engineer}{NVIDIA}{Beaverton, OR}{}{
+Worked on backend and front-end development, optimizations, performance analysis.
 \begin{itemize}
-  \item Future open source Fortran compiler based on Clang/LLVM (ongoing) \newline{}Select highlights:
+  \item Maintenance of PGI compilers
   \begin{itemize}
-    \item Integrated PGI Fortran compiler into Clang
-    \item Worked on refactoring legacy compiler code
-    \item Modified Clang to accept Fortran source files and Fortran-specific command line options
+    \item Improved Fortran procedure pointer handling
+    \item GNU register variable extension support in PGI LLVM backend
+    \item Improved OpenMP nesting support
   \end{itemize}
-  \item Participated in porting PGI C, C++, and Fortran compilers to OpenPower\newline{}Select highlights:
+  \item Flang --- open source Fortran compiler based on PGI Fortran compiler (DOE contract)
+  \begin{itemize}
+    \item Integrated PGI Fortran compiler components into Clang, modified Clang to accept Fortran source files and Fortran-specific command line options
+    \item Fixed bugs exposed by migration to a new LLVM backend
+    \item Worked on refactoring legacy compiler code
+  \end{itemize}
+  \item Participated in porting C, C++, and Fortran compilers to OpenPower Linux (for upcoming CORAL system, under DOE contract)
   \begin{itemize}
     \item Analyzed benchmark results, investigated and fixed correctness errors
     \item Maintained compiler's LLVM backend: integrated new versions, provided debugging information support, etc
   \end{itemize}
 \end{itemize}}
-\cventry{Apr~2013--July~2014}{SW Engineer / Tech Lead}{UTi Worldwide}{Portland, OR}{}{Software developer in the Platform team. Worked on performance analysis and system tools, provided recommendations to other teams.\newline{}%
-Detailed achievements:
+\cventry{Apr~2013--July~2014}{SW Engineer / Tech Lead}{UTi Worldwide}{Portland, OR}{}{Software developer in the Platform team. Worked on performance analysis and system tools, provided recommendations to other teams.
 \begin{itemize}
-\item Deployment request tool
-  \begin{itemize}
-  \item Lead a cross-team effort to develop a centralized system for deployment management
-  \item Implemented SCM integration using client API
-  \item Gathered requirements and supported change management
-  \end{itemize}
+\item Analyzed performance and correctness issues, consulted other teams on dealing with resource contention
 \item Developed monitoring tools for TIBCO software
-  \begin{itemize}
-  \item Implemented collection of information from Active Matrix enterprise bus and Business Works XSLT engine
-  \item Used Java Management Extensions to publish the results
-  \item Implemented statistics collection using R
-  \end{itemize}
-\item Guided adaptation of Apache Camel as Enterprise Integration framework
+\item Rewrote or fixed components suffering from parallel consistency issues
 \end{itemize}}
-\cventry{Oct~2011--Mar~2013}{JR SW Engineer}{The Portland Group, Inc (STMicroelectronics)}{Lake Oswego, OR}{}{Intern in the Tools group. Worked on debugger and disassembler\newline{}%
-Detailed achievements:%
+\cventry{Oct~2011--Mar~2013}{JR SW Engineer}{The Portland Group, Inc (STMicroelectronics)}{Lake Oswego, OR}{}{Intern in the Tools group. Worked on debugger and disassembler.
 \begin{itemize}%
 \item Optimized Multi-Process Debugging Support
   \begin{itemize}%
-  \item Code that worked with all supported platforms.
-  \item Improved debugger's scalability by changing the internal symbol representation, which provided better support for 
-        large scale cluster applications.
-  \item The change also improved debugger's ASLR support.
+  \item Improved debugger's scalability by changing the internal symbol representation, which provided better support for large scale cluster applications
+  \item Improved debugger's ASLR support
+  \item Tested my code with all supported MPI implementations
   \end{itemize}
 \item Developed ARM Disassembler
   \begin{itemize}
-    \item Implemented support for ARM, Neon (aka Advanced SIMD) and VFP Instruction Sets.
-    \item Communicated efficiently within a team of four people regrading design and output issues.
+    \item Implemented support for ARM, Neon (aka Advanced SIMD) and VFP Instruction Sets
+    \item Communicated efficiently within a team of four people regrading design and output issues
   \end{itemize}
 \end{itemize}}
-%\subsection{Miscellaneous}
+\section{Open Source Experience}
+\cventry{}{FreeBSD port maintainer}{NekoVM/Haxe Foundation}{nekovm.org}{}{Ported Neko language and virtual machine to FreeBSD, contributed other minor improvements.}
+
+\section{Technical expertise}
+\cvitem{Languages}{C, C++, Java, Fortran, Haskell, Pascal, R}
+\cvitem{Scripting}{Python, Perl, Tcl, PHP, Bash, CShell, Windows Shell}
+\cvitem{OS}{Linux, Windows, FreeBSD, Mac OS X}
+\cvitem{Architectures}{IA-32, Intel 64, IA-64, ARM, OpenPower}
+\cvitem{Profilers}{PGProf, perf, Oprofile, Java VisualVM, JRockit}
+\cvitem{Debuggers}{GDB, PGDBG, JDB, WinDBG}
+\cvitem{Configuration}{Puppet, Vagrant}
+\cvitem{Verification}{Jenkins, Valgrind, Cmockery, Google Test}
+%\cvitem{Frameworks}{LLVM, Hibernate, JMX, Apache Camel, TIBCO, DCOM, Delphi, MPI, OpenMP, Pthreads, .NET} % do we need this?
+%\cvitem{Development}{OOP, UML, Agile Development}
 
 \section{Education}
-% arguments 3 to 6 can be left empty, got rid of the grades (the one right before description) for now
-% Do we actually need to include a GPA in a resume?
-\cventry{2010--2013}{MS in Computer Science}{Portland State University}{Portland, Oregon}{}{Some of the courses taken: Compiler Design, Computer Architecture, Modern Language Processors, Theory Of Computation, Advanced Computer Architecture I and II, Programming Languages\newline{}Select projects: Lightweight Just-in-time compiler for Java byte code, Survey of parallel sorting algorithms.}  
+% arguments 3 to 6 can be left empty, got rid of the grades (the one right before description)
+\cventry{2010--2013}{MS in Computer Science}{Portland State University}{Portland, Oregon}{}{Some of the courses taken: Compiler Design, Computer Architecture, Modern Language Processors, Theory Of Computation, Advanced Computer Architecture I and II, Programming Languages\newline{}Select projects: Lightweight Just-in-time compiler for Java byte code, Survey of parallel sorting algorithms using MPI.}  
 \cventry{2003--2008}{BS in Physics and Computer Science}{Vologda State Pedagogical University}{Vologda, Russia}{}{Thesis topic: Numeric Simulation of Hydro-Acoustic Luminescence.
 \newline{}The thesis focused on finding numerical solutions for ordinary differential equation for different acoustic frequencies and different media properties.}
 
-\section{Languages}
-\cvitemwithcomment{English}{Fluent}{}
-\cvitemwithcomment{Russian}{Native}{}
-\cvitemwithcomment{German}{Basic}{}
+%\section{Languages}
+%\cvitemwithcomment{English}{Fluent}{}
+%\cvitemwithcomment{Russian}{Native}{}
+%\cvitemwithcomment{German}{Basic}{}
 
 %\section{Interests}
 %\cvitem{hobby 1}{Description}
