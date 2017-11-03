@@ -27,10 +27,3 @@ or on systems where _gmake_ is not the default make
 gmake
 ```
 
-Optionally, run 
-```
-make preview
-```
-to open a PDF veiwer with the resume in it (handy when your viewer does not
-reload automatically, like _mupdf_).
-
