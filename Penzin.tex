@@ -82,7 +82,7 @@
 
 \section{Objective}
 
-\cvitem{~}{Grow professionally as a compiler engineer by working on challenging real world problems.}
+\cvitem{~}{Utilize my experience with various kinds of low-level software development.}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
@@ -91,20 +91,21 @@
 
 \section{Professional Experience}
 %\subsection{Vocational}
-\cventry{July~2014--Current}{Compiler Engineer}{NVIDIA}{Beaverton, OR}{}{
-Worked on backend and front-end development, optimizations, performance analysis.
+\cventry{July~2014--Current}{System Software Engineer --- Compiler Developer}{NVIDIA}{Beaverton, OR}{}{
+Compiler engineer working on Portland Group (PGI) product line. Worked on
+backend and front-end development, optimizations, performance analysis.
 \begin{itemize}
-  \item Maintenance of PGI compilers
+  \item Compiler maintenance
   \begin{itemize}
     \item Improved Fortran procedure pointer handling
-    \item GNU register variable extension support in PGI LLVM backend
+    \item GNU register variable extension support in LLVM backend
     \item Improved OpenMP nesting support
   \end{itemize}
-  \item Flang --- open source Fortran compiler based on PGI Fortran compiler (DOE contract)
+  \item Flang --- open source LLVM Fortran compiler (DOE contract), derived from Portland Group Fortran compiler
   \begin{itemize}
-    \item Integrated PGI Fortran compiler components into Clang, modified Clang to accept Fortran source files and Fortran-specific command line options
+    \item Implemented a new path in Clang toolchain to compile Fortran sources files and handle Fortran-specific command line options
+    \item Forked proprietary compiler components and integrated them in Clang toolchain
     \item Fixed bugs exposed by migration to a new LLVM backend
-    \item Worked on refactoring legacy compiler code
   \end{itemize}
   \item Participated in porting C, C++, and Fortran compilers to OpenPower Linux (for upcoming CORAL system, under DOE contract)
   \begin{itemize}
