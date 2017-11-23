@@ -27,7 +27,7 @@
 % personal data
 \firstname{Petr}
 \familyname{Penzin}
-\title{Software Engineer}               % optional, remove the line if not wanted
+%\title{Software Engineer}               % optional, remove the line if not wanted
 %\address{Some street}{Some city, state, zip}    % optional, remove the line if not wanted
 %\mobile{+1~(234)~567~8888}                     % optional, remove the line if not wanted
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
@@ -80,9 +80,9 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Objective}
+%\section{Objective}
 
-\cvitem{~}{Utilize my experience with various kinds of low-level software development.}
+\cvitem{~}{Software generalist with a passion for parallel performance, cluster applications, and developer tools.}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
@@ -91,17 +91,16 @@
 
 \section{Professional Experience}
 %\subsection{Vocational}
-\cventry{July~2014--Current}{System Software Engineer --- Compiler Developer}{NVIDIA}{Beaverton, OR}{}{
-Compiler engineer at Portland Group (PGI) product line. Worked on
-backend and front-end development, optimizations, performance analysis.
+\cventry{Jul~2014--Nov~2017}{System Software Engineer}{NVIDIA}{Beaverton, OR}{}{
+High Performance Computing compiler engineer. Worked on compilers and runtimes
+for scientific and engineering cluster applications.
 \begin{itemize}
   \item Compiler maintenance
   \begin{itemize}
-    \item Improved Fortran procedure pointer handling
-    \item GNU register variable extension support in LLVM backend
-    \item Improved OpenMP nesting support
+    \item Fixed support for nested parallelism in OpenMP runtime
+    \item Modified LLVM backend to implement explicit register variable support
   \end{itemize}
-  \item Flang --- open source LLVM Fortran compiler (DOE contract), derived from Portland Group Fortran compiler
+  \item Open source LLVM Fortran compiler (DOE contract), derived from Portland Group Fortran compiler
   \begin{itemize}
     \item Implemented a new path in Clang toolchain to compile Fortran source files and handle Fortran-specific command line options
     \item Forked proprietary compiler components and integrated them in Clang toolchain
@@ -113,7 +112,7 @@ backend and front-end development, optimizations, performance analysis.
     \item Maintained compiler's LLVM backend: integrated new versions, provided debugging information support, etc
   \end{itemize}
 \end{itemize}}
-\cventry{Apr~2013--July~2014}{SW Engineer / Tech Lead}{UTi Worldwide}{Portland, OR}{}{Software developer in the Platform team. Worked on performance analysis and system tools, provided recommendations to other teams.
+\cventry{Apr~2013--Jul~2014}{SW Engineer / Tech Lead}{UTi Worldwide}{Portland, OR}{}{Software developer in the Platform team. Worked on performance analysis and system tools, provided recommendations to other teams.
 \begin{itemize}
 \item Analyzed performance and correctness issues, consulted other teams on dealing with resource contention
 \item Developed monitoring tools for TIBCO software
@@ -135,6 +134,7 @@ backend and front-end development, optimizations, performance analysis.
 \end{itemize}}
 \section{Open Source Experience}
 \cventry{}{FreeBSD port maintainer}{NekoVM/Haxe Foundation}{nekovm.org}{}{Ported Neko language and virtual machine to FreeBSD, contributed other minor improvements.}
+\cventry{}{Author}{NekoVM Haskell package}{hackage.haskell.org/package/neko-lib}{}{Wrote a Haskell library to read and write NekoVM bytecode.}
 
 \section{Technical expertise}
 \cvitem{Languages}{C, C++, Java, Fortran, Haskell, Pascal, R}
