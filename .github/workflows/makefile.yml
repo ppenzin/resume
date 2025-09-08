@@ -23,7 +23,17 @@ jobs:
       run: make
 
     - name: Upload PDF
-      uses: actions/upload-artifact@v4.6.2
+      uses: actions/upload-artifact@v5
       with: 
         name: PDF
         path: Penzin.pdf
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get PDF
+      uses: actions/download-artifact@v5
+      with:
+        name: PDF
