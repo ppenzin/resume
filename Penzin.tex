@@ -91,7 +91,25 @@
 
 \section{Professional Experience}
 %\subsection{Vocational}
-\cventry{Jul~2018--Current}{Web Runtime Compiler Engineer / Standards Lead}{Intel}{Hillsboro, OR}{}{
+\cventry{Jan~2024--Current}{Compiler Engineer}{Tenstorrent}{Remote}{}{
+Pre-silicon toolchain development for for RISC-V CPU.
+\begin{itemize}
+  \item TT Ascalon D8 support in upstream LLVM toochain
+  \begin{itemize}
+    \item CPU definition and instruction scheduling model
+    \item Instruction tuning knob for \texttt{vrgather} instruction
+  \end{itemize}
+  \item Internal toolchain maintenance and benchmarks analysis
+  \begin{itemize}
+    \item Identifying optimization opportunities based on common CPU benchmarks
+    \item Toolchain Functional Safety requirements
+  \end{itemize}
+  \item RISC-V Software Ecosystem (RISE) Compilers and Toolchains Working Group lead
+  \begin{itemize}
+    \item Coordinate GCC and LLVM toolchain development efforts.
+  \end{itemize}
+\end{itemize}}
+\cventry{Jul~2018--Jan~2024}{Web Runtime Compiler Engineer / Standards Lead}{Intel}{Hillsboro, OR}{}{
 WebAssembly and JavaScript
 \begin{itemize}
   \item WebAssembly standard contributor, mostly working on cross-platform SIMD definition
@@ -129,34 +147,39 @@ for scientific and engineering cluster applications.
 \item Developed monitoring tools for TIBCO software
 \item Rewrote or fixed components suffering from parallel consistency issues
 \end{itemize}}
-\cventry{Oct~2011--Mar~2013}{JR SW Engineer}{The Portland Group, Inc (STMicroelectronics)}{Lake Oswego, OR}{}{Intern in the Tools group. Worked on debugger and disassembler.
-\begin{itemize}%
-\item Optimized Multi-Process Debugging Support
-  \begin{itemize}%
-  \item Improved debugger's scalability by changing the internal symbol representation, which provided better support for large scale cluster applications
-  \item Improved debugger's ASLR support
-  \item Tested my code with all supported MPI implementations
-  \end{itemize}
-\item Developed ARM Disassembler
-  \begin{itemize}
-    \item Implemented support for ARM, Neon (aka Advanced SIMD) and VFP Instruction Sets
-    \item Communicated efficiently within a team of four people regrading design and output issues
-  \end{itemize}
-\end{itemize}}
+%\cventry{Oct~2011--Mar~2013}{JR SW Engineer}{The Portland Group, Inc (STMicroelectronics)}{Lake Oswego, OR}{}{Intern in the Tools group. Worked on debugger and disassembler.
+%\begin{itemize}%
+%\item Optimized Multi-Process Debugging Support
+%  \begin{itemize}%
+%  \item Improved debugger's scalability by changing the internal symbol representation, which provided better support for large scale cluster applications
+%  \item Improved debugger's ASLR support
+%  \item Tested my code with all supported MPI implementations
+%  \end{itemize}
+%\item Developed ARM Disassembler
+%  \begin{itemize}
+%    \item Implemented support for ARM, Neon (aka Advanced SIMD) and VFP Instruction Sets
+%    \item Communicated efficiently within a team of four people regrading design and output issues
+%  \end{itemize}
+%\end{itemize}}
+\section{Industry Community Experience}
+\cventry{TODO--Current}{Subgroup chair}{World Wide Web Consortium (W3C)}{SIMD subgroup chair and vector proposal champion}{remote}{Co-author SIMD and relaxed SIMD standards, author of flexible vectors proposal.}
+\cventry{Apr~2025--Current}{Working group lead}{RISC-V Software Ecosystem (RISE)}{Lead Compilers and Toolchains working group}{remote}{Facilitate RISE members' collaboration on RISC-V toolchains: managing groups projects as well as code reviews and own contributions.}
 \section{Open Source Experience}
+\cventry{}{Committer}{LLVM}{LLVM compiler infrastructure project}{github.com/llvm/llvm-project}{RISC-V and WebAssembly - backend and middle end, code reviews.}
 \cventry{}{Maintainer}{ChakraCore}{JavaScript engine with a C API, formerly part of Edge}{github.com/chakra-core/ChakraCore}{Maintenance and various improvements: WebAssembly SIMD, CMake build definition, assorted project upkeep.}
 \cventry{}{Maintainer}{Fort}{Fortran Front End for LLVM compiler}{fort-compiler.org}{Maintenance and various improvements: current LLVM support, Fortran Modules, bug fixes.}
-\cventry{}{Author}{NekoVM Haskell package}{}{hackage.haskell.org/package/neko-lib}{Wrote a Haskell library to read and write NekoVM bytecode.}
+%\cventry{}{Author}{NekoVM Haskell package}{}{hackage.haskell.org/package/neko-lib}{Wrote a Haskell library to read and write NekoVM bytecode.}
 
-\section{Technical expertise}
-\cvitem{Languages}{C, C++, Java, Fortran, Haskell, Pascal, R}
-\cvitem{Scripting}{Python, Perl, Tcl, PHP, Bash, CShell, Windows Shell}
-\cvitem{OS}{Linux, Windows, FreeBSD, Mac OS X}
-\cvitem{Architectures}{IA-32, Intel 64, IA-64, ARM, OpenPower}
-\cvitem{Profilers}{PGProf, perf, Oprofile, Java VisualVM, JRockit}
-\cvitem{Debuggers}{GDB, PGDBG, JDB, WinDBG}
-\cvitem{Configuration}{Puppet, Vagrant}
-\cvitem{Verification}{Jenkins, Valgrind, Cmockery, Google Test}
+%\section{Technical expertise}
+%\cvitem{Languages}{C, C++, Java, Fortran, Haskell, Pascal, R}
+%\cvitem{Scripting}{Python, Perl, Tcl, PHP, Bash, CShell, Windows Shell}
+%\cvitem{OS}{Linux, Windows, FreeBSD, Mac OS X}
+%\cvitem{Architectures}{x86, RISC-V, Arm, OpenPower}
+% PreSi tools?
+%\cvitem{Profilers}{PGProf, perf, Oprofile, Java VisualVM, JRockit}
+%\cvitem{Debuggers}{GDB, PGDBG, JDB, WinDBG}
+%\cvitem{Configuration}{Puppet, Vagrant}
+%\cvitem{Verification}{Jenkins, Valgrind, Cmockery, Google Test}
 %\cvitem{Frameworks}{LLVM, Hibernate, JMX, Apache Camel, TIBCO, DCOM, Delphi, MPI, OpenMP, Pthreads, .NET} % do we need this?
 %\cvitem{Development}{OOP, UML, Agile Development}
 
