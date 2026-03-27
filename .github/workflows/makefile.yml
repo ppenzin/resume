@@ -27,3 +27,13 @@ jobs:
       with: 
         name: PDF
         path: Penzin.pdf
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get PDF
+      uses: actions/download-artifact@v4.6.2
+      with:
+        name: PDF
